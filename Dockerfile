@@ -1,5 +1,5 @@
 FROM prestashop/prestashop:latest
-WORKDIR /workspace
+WORKDIR .
 COPY post-deploy.sh .
 RUN chmod +x ./post-deploy.sh
 # Run the script when starting the container
